@@ -3995,13 +3995,13 @@
             }
         }
 
-        <span class="comment">// impl&lt;&#39;a, &#39;b&gt; PartialEq&lt;$lhs&gt; for $rhs {</span>
-        <span class="comment">//     #[inline]</span>
-        <span class="comment">//     fn eq(&amp;self, other: &amp;$lhs) -&gt; bool {</span>
-        <span class="comment">//         &lt;Utf8Path as PartialEq&gt;::eq(self.as_ref(), other)</span>
-        <span class="comment">//     }</span>
-        <span class="comment">// }</span>
-        <span class="comment">//</span>
+        <span class="kw">impl</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span>, <span class="lifetime">&#39;b</span><span class="op">&gt;</span> <span class="ident">PartialEq</span><span class="op">&lt;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">lhs</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">rhs</span> {
+            <span class="attribute">#[<span class="ident">inline</span>]</span>
+            <span class="kw">fn</span> <span class="ident">eq</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">other</span>: <span class="kw-2">&amp;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">lhs</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">bool</span> {
+                <span class="op">&lt;</span><span class="ident">Utf8Path</span> <span class="kw">as</span> <span class="ident">PartialEq</span><span class="op">&gt;</span>::<span class="ident">eq</span>(<span class="ident">Utf8Path</span>::<span class="ident">new</span>(<span class="self">self</span>), <span class="ident">other</span>)
+            }
+        }
+
         <span class="kw">impl</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span>, <span class="lifetime">&#39;b</span><span class="op">&gt;</span> <span class="ident">PartialOrd</span><span class="op">&lt;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">rhs</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">lhs</span> {
             <span class="attribute">#[<span class="ident">inline</span>]</span>
             <span class="kw">fn</span> <span class="ident">partial_cmp</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">other</span>: <span class="kw-2">&amp;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">rhs</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">std</span>::<span class="ident">cmp</span>::<span class="ident">Ordering</span><span class="op">&gt;</span> {
@@ -4009,12 +4009,12 @@
             }
         }
 
-        <span class="comment">// impl&lt;&#39;a, &#39;b&gt; PartialOrd&lt;$lhs&gt; for $rhs {</span>
-        <span class="comment">//     #[inline]</span>
-        <span class="comment">//     fn partial_cmp(&amp;self, other: &amp;$lhs) -&gt; Option&lt;cmp::Ordering&gt; {</span>
-        <span class="comment">//         &lt;Utf8Path as PartialOrd&gt;::partial_cmp(self.as_ref(), other)</span>
-        <span class="comment">//     }</span>
-        <span class="comment">// }</span>
+        <span class="kw">impl</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span>, <span class="lifetime">&#39;b</span><span class="op">&gt;</span> <span class="ident">PartialOrd</span><span class="op">&lt;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">lhs</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">rhs</span> {
+            <span class="attribute">#[<span class="ident">inline</span>]</span>
+            <span class="kw">fn</span> <span class="ident">partial_cmp</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">other</span>: <span class="kw-2">&amp;</span><span class="macro-nonterminal">$</span><span class="macro-nonterminal">lhs</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">std</span>::<span class="ident">cmp</span>::<span class="ident">Ordering</span><span class="op">&gt;</span> {
+                <span class="op">&lt;</span><span class="ident">Utf8Path</span> <span class="kw">as</span> <span class="ident">PartialOrd</span><span class="op">&gt;</span>::<span class="ident">partial_cmp</span>(<span class="ident">Utf8Path</span>::<span class="ident">new</span>(<span class="self">self</span>), <span class="ident">other</span>)
+            }
+        }
     };
 }
 
