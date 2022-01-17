@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["main",""]],"struct":[["Opt","This example shows how a `Utf8Path` can be used with `clap`’s derive-based argument parsing."]]});

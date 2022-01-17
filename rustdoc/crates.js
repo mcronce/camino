@@ -1,1 +1,1 @@
-window.ALL_CRATES = ["camino","proc_macro2","quote","serde","serde_derive","syn","unicode_xid"];
+window.ALL_CRATES = ["anyhow","atty","bitflags","camino","camino_examples","clap","clap_derive","hashbrown","indexmap","itoa","lazy_static","libc","memchr","os_str_bytes","proc_macro2","quote","ryu","serde","serde_derive","serde_json","strsim","syn","termcolor","textwrap","unicode_xid"];
